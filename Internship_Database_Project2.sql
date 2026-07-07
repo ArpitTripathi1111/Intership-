@@ -208,3 +208,11 @@ JOIN course c ON s.C_ID = c.C_ID;
 SELECT *
 FROM student s
 JOIN course c ON s.C_ID = c.C_ID;
+
+SELECT s.name AS student_name, c.C_Name AS course_name
+FROM student s
+CROSS JOIN course c;
+
+SELECT student.name, course.C_Name
+FROM student
+JOIN course ON student.C_ID = course.C_ID;
