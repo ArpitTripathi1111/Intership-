@@ -153,3 +153,13 @@ JOIN Departments ON Teachers.Dept_ID = Departments.Dept_ID;
 SELECT *
 FROM Teachers
 JOIN Departments ON Teachers.Dept_ID = Departments.Dept_ID;
+
+INSERT INTO Teachers (Teacher_ID, Name, Location, Subject, Dept_ID, Salary)
+VALUES (4, 'Rahul Verma', 'Lucknow', 'Operating Systems', 101, 45000);
+
+SELECT * FROM Teachers;
+
+DELETE FROM Teachers
+WHERE Teacher_ID = 4;
+
+SELECT * FROM Teachers;
